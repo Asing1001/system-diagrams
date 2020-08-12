@@ -1,1 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2020-08-12T15:02:10.961Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" version="13.1.2" etag="9LQXq3PYTJz089KpVt5n" type="github"><diagram id="1QTD3bj8Jsb3kuZy2S2_">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-12T15:32:31.870Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="qalXHxDhp9ccCQUP13Nh" version="13.1.2" type="github">
+  <diagram id="1QTD3bj8Jsb3kuZy2S2_" name="Page-1">
+    <mxGraphModel dx="1426" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-25" value="Operator System" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="440" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-6" value="Contract" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M5jNvEkL6xHq8pfUbafr-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-19" value="Create contract by inventory" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="M5jNvEkL6xHq8pfUbafr-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="270" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="725" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-1" value="LAMP system" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-5" value="Insert Data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="330" as="sourcePoint" />
+            <mxPoint x="310" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-10" value="Product data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="M5jNvEkL6xHq8pfUbafr-7" target="M5jNvEkL6xHq8pfUbafr-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-7" value="MySQL" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="390" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-8" value="Operator Frontend View" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-20" value="Inventory" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="M5jNvEkL6xHq8pfUbafr-8" target="M5jNvEkL6xHq8pfUbafr-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-23" value="Process Contract data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M5jNvEkL6xHq8pfUbafr-26" value="Sales" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
