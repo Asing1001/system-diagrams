@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-26T08:50:16.568Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="YwCxKDzNTg1mAF8z8Q-q" version="13.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-10T09:18:02.551Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="4qQEN7IsBqmOCf4Ycsqv" version="13.6.9" type="github">
   <diagram id="KRTKBKxZudRrld9R8o7Q" name="Page-1">
-    <mxGraphModel dx="2066" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="760" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-1" value="ecac-ingress-public.line-apps.com." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="20" y="210" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-16" value="DNS CNAME" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SDYtCLWi_q_EeFBWO2lE-14" target="SDYtCLWi_q_EeFBWO2lE-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -16,34 +16,39 @@
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-14" value="buy.line.me" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SDYtCLWi_q_EeFBWO2lE-5" value="L4 Load Balance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="SDYtCLWi_q_EeFBWO2lE-2" target="SDYtCLWi_q_EeFBWO2lE-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-2" value="LoadBalancer with public IP" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="220" y="210" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="320" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-17" value="VKS" style="group;fillColor=#33FF99;rounded=0;shadow=0;comic=0;glass=0;" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="220" y="430" width="370" height="380" as="geometry" />
+          <mxGeometry x="210" y="50" width="460" height="350" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-4" value="Multiple ingress Nodes &lt;br&gt;(Traefik instance with public label)" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
-          <mxGeometry width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="128.94736842105263" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-6" value="web-app service" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
-          <mxGeometry y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="273.51" y="18.421052631578945" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-7" value="Match service by rule: Host(&#39;buy.line.me&#39;)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;align=center;" parent="SDYtCLWi_q_EeFBWO2lE-17" source="SDYtCLWi_q_EeFBWO2lE-4" target="SDYtCLWi_q_EeFBWO2lE-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="74.5945945945946" y="73.68421052631578" />
+              <mxPoint x="74.5945945945946" y="73.68421052631578" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-8" value="Multiple web-app pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
-          <mxGeometry x="220" y="140" width="120" height="60" as="geometry" />
+          <mxGeometry x="273.5135135135135" y="128.94736842105263" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-9" value="load balance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" source="SDYtCLWi_q_EeFBWO2lE-6" target="SDYtCLWi_q_EeFBWO2lE-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-10" value="web-app container" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
-          <mxGeometry x="220" y="280" width="120" height="60" as="geometry" />
+          <mxGeometry x="273.5135135135135" y="257.89473684210526" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" source="SDYtCLWi_q_EeFBWO2lE-8" target="SDYtCLWi_q_EeFBWO2lE-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7az7m45PT8l8N48-JSgP-1" value="L4 Load Balance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="SDYtCLWi_q_EeFBWO2lE-2" target="SDYtCLWi_q_EeFBWO2lE-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
