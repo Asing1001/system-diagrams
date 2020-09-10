@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-10T09:18:02.551Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="4qQEN7IsBqmOCf4Ycsqv" version="13.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-10T09:37:09.590Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="rhtWip4ssW2H2mBTDmjK" version="13.6.9" type="github">
   <diagram id="KRTKBKxZudRrld9R8o7Q" name="Page-1">
     <mxGraphModel dx="760" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-17" value="VKS" style="group;fillColor=#33FF99;rounded=0;shadow=0;comic=0;glass=0;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="210" y="50" width="460" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="SDYtCLWi_q_EeFBWO2lE-4" value="Multiple ingress Nodes &lt;br&gt;(Traefik instance with public label)" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
+        <mxCell id="SDYtCLWi_q_EeFBWO2lE-4" value="Ingress controller(Traefik) Nodes" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
           <mxGeometry x="40" y="128.94736842105263" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-6" value="web-app service" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
@@ -36,7 +36,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="SDYtCLWi_q_EeFBWO2lE-8" value="Multiple web-app pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
+        <mxCell id="SDYtCLWi_q_EeFBWO2lE-8" value="web-app pods" style="rounded=0;whiteSpace=wrap;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" vertex="1">
           <mxGeometry x="273.5135135135135" y="128.94736842105263" width="149.1891891891892" height="55.26315789473685" as="geometry" />
         </mxCell>
         <mxCell id="SDYtCLWi_q_EeFBWO2lE-9" value="load balance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="SDYtCLWi_q_EeFBWO2lE-17" source="SDYtCLWi_q_EeFBWO2lE-6" target="SDYtCLWi_q_EeFBWO2lE-8" edge="1">
