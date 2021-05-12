@@ -1,14 +1,14 @@
-<mxfile modified="2020-12-15T09:28:46.491Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="gzQssErNbrtaOta8meyc" version="13.10.4" type="github">
+<mxfile modified="2021-05-12T14:47:47.663Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="jDYFEajvNAidPlugLbss" version="14.6.10" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
-    <mxGraphModel dx="1186" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-7" value="Web server" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="440" y="430" width="290" height="120" as="geometry" />
-        </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-22" value="SME system" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="345" y="320" width="465" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="TEUTuVSE9-XJPLcy85-D-7" value="VMs" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="430" width="310" height="120" as="geometry" />
         </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="AltNvUtPv-RZvn-n8Vrn-4" target="TEUTuVSE9-XJPLcy85-D-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -26,10 +26,10 @@
         <mxCell id="TEUTuVSE9-XJPLcy85-D-1" value="Load balancer" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="545" y="200" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-2" value="Apache" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="TEUTuVSE9-XJPLcy85-D-2" value="Apache+PHP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="490" y="450" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-3" value="Apache" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+        <mxCell id="TEUTuVSE9-XJPLcy85-D-3" value="Apache+PHP" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="610" y="450" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TEUTuVSE9-XJPLcy85-D-7" target="TEUTuVSE9-XJPLcy85-D-8" edge="1">
@@ -55,7 +55,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-8" value="Mysql" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
-          <mxGeometry x="555" y="590" width="60" height="80" as="geometry" />
+          <mxGeometry x="545" y="590" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-12" value="NFS" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="730" y="590" width="60" height="80" as="geometry" />
@@ -63,29 +63,25 @@
         <mxCell id="TEUTuVSE9-XJPLcy85-D-14" value="Redis session storage" style="shape=cylinder;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="590" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TEUTuVSE9-XJPLcy85-D-16" target="TEUTuVSE9-XJPLcy85-D-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-16" value="CDN" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="395" y="200" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.042;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TEUTuVSE9-XJPLcy85-D-18" target="TEUTuVSE9-XJPLcy85-D-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="TEUTuVSE9-XJPLcy85-D-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TEUTuVSE9-XJPLcy85-D-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="240" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="TEUTuVSE9-XJPLcy85-D-18" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="310" y="210" width="30" height="60" as="geometry" />
+          <mxGeometry x="390" y="210" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TEUTuVSE9-XJPLcy85-D-23" value="LINE Mail group API" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="860" y="460" width="120" height="60" as="geometry" />
+        <mxCell id="TEUTuVSE9-XJPLcy85-D-23" value="Naver Mail group API" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="830" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="AltNvUtPv-RZvn-n8Vrn-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AltNvUtPv-RZvn-n8Vrn-4" target="TEUTuVSE9-XJPLcy85-D-3">
+        <mxCell id="AltNvUtPv-RZvn-n8Vrn-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="AltNvUtPv-RZvn-n8Vrn-4" target="TEUTuVSE9-XJPLcy85-D-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="650" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="AltNvUtPv-RZvn-n8Vrn-4" value="Reverse Proxy (Varnish)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="AltNvUtPv-RZvn-n8Vrn-4" value="Nginx Cache on k8s-cluster" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="545" y="330" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
